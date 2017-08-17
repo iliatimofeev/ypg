@@ -40,7 +40,7 @@
 ----------------------------------------------------*/
 /* Page on Scroll */
 .page-on-scroll .page-header {
-  background: #fff;
+  background: transparent; /* #FFF*/
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -66,7 +66,7 @@
     border: none;
     margin: 25px 15px 25px 0; }
     .page-header .navbar-toggle .icon-bar {
-      background: #3f5263; }
+      background: #3f5263; } /*#3f5263;*/
   .page-header .navbar-brand {
     height: 82px;
     max-height: 82px;
@@ -95,7 +95,7 @@
     letter-spacing: 1px;
     border: 1px solid transparent;
     text-transform: uppercase;
-    color: #fff; }
+    color: #fff; } /*#fff*/
   .page-header .navbar-nav li.active > a,
   .page-header .navbar-nav li > a:hover {
     border: 1px solid rgba(255, 255, 255, 0.1); }
@@ -148,6 +148,11 @@
 /* Stylesheet design for above 992px */
 @media (min-width: 992px) {
   /* 992px */
+  .page-on-scroll .page-header {
+  background: #fff; /* #FFF*/
+  }
+  
+  
   .page-header {
     top: 0;
     left: 0;
