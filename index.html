@@ -43,7 +43,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 <!-- BEGIN BODY -->
 <!-- DOC: Apply "page-on-scroll" class to the body element to set fixed header layout -->
 <body class="page-header-fixed">
-    <script src="https://cdn.plot.ly/plotly-latest.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
 	<!-- BEGIN MAIN LAYOUT -->
@@ -128,17 +128,40 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <div class="page-content">
        
        <section class="intro" id="intro">
+          <div class="intro-block topic">
+           
         <div class="container">
 
             <div class="col-md-12">
-                <h2>Результаты опроса жителей</h2>
+                <h1>Результаты опроса жителей 2.0<small>&nbsp; черновик</small></h1>
+                <p>Анализ предожений жителей по развитию десткой площадки</p>
                 <ul>
-                    <li> Раз</li>
-                    <li>два три </li>
+                    <li>Опрос заполнило 47 домохозяйства</li>
+                    <li>Свои предпочтения указали 79 человек из них 58 ребенка</li>
                 </ul>
-
+                <p>Документ включает следующий набор разделов:</p>
+                <ul>
+                    <li><a href="#invest"><strong>Инвестиции</strong></a> 
+                        куда и сколько готовы инвестировать участники</li>
+                    <li><a href="#kids"><strong>Десткая</strong></a>
+                         площадка и ее желаймый сотав
+                    </li>
+                    <li><a href="#sport"><strong>Спортивная </strong></a>
+                        площадка, желаймые элементы и варианты их компоновки
+                    </li>
+                    <li><a href="#alcove"><strong>Беседка </strong></a>
+                        и ее важность
+                    </li>
+                    <li><a href="#findings"><strong>Выводы </strong></a>
+                       сводные выводы из отчета
+                    </li>
+                </ul>
+                <strong><a href="https://goo.gl/forms/2Bo1Hw4bgU7gNfEA3">Анкета</a> попрежнему доступна для заполнения</strong>
+                
+                
             </div>   
         </div>
+          </div>
        </section>
     
         
@@ -148,29 +171,30 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <div class="container">
                     <div class="caption">
                         <h2>Во что вы готовы инвестировать?</h2>
-                        <small>Вопрос позволял множественный выбор поэтому сумма голосов может быть больше 100%</small>
+                        <p>Сколько и на что готовы потрать участники опроса</p>
   
                     </div>
                     <div class="row">
-                        <div class ="col-md-7">
-                            <div id="ypg-invest-rank" class="chart-auto">
-                                <img class="chart-img"  src="img/ypg-invest-rank.svg" />
-                            </div>
-                        </div>
                         <div class ="col-md-5">
-                            <h3>Рейтинг объектов</h3>
+                            <h3>Инвестиционный рейтинг объектов</h3>
                             <ul>
                                 <li>Наиболеее востребованно обновление детской площадки.</li>
                                 <li class="small">Варинт беседка добавлен опрашиваемыми, 
                                     поэтому его не корректно сравнивать с остальными,
                                     подробнее в разделе <a href="#alcove">беседка</a></li>
                             </ul>
+                        <small>Вопрос позволял множественный выбор поэтому сумма голосов может быть больше 100%</small>
                             
+                        </div>
+                        <div class ="col-md-7">
+                            <div id="ypg-invest-rank" class="chart-auto">
+                                <img class="chart-img"  src="img/ypg-invest-rank.svg" />
+                            </div>
                         </div>
                         
                     </div>
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 col-md-push-7">
                             <h3>Готовность финасировать проекты</h3>
                             <ul>
                                 <li>Почти все опрошенные готовы участовать в финасироание проекта.</li>
@@ -178,25 +202,27 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                             </ul>
                            
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 col-md-pull-5">
                             <div id="ypg-invest-to" class="chart-auto">
                                 <img class="chart-img"  src="img/ypg-invest-to.svg" />
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-md-5">
+                            <h3>Объем финасирования</h3>
+                            <ul>
+                                <li>Средния сумма участия 8,3 тр</li>
+                                <li>Хотя большиство готово выделить 10 тр</li>
+                                <li>Отавшиеся около 5 тр, и некоторые около 20 тр</li>
+                                
+                            </ul>
+                         </div>
                         <div class="col-md-7">
                             <div id="ypg-invest-what" class="chart-auto">
                                 <img class="chart-img"  src="img/ypg-invest-what.svg" />
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <h3>Объем финасирования</h3>
-                            <ul>
-                                <li>Средния сумма участия {dif}</li>
-                                <li>Ниболее частая сумма {moda}</li>
-                            </ul>
-                      </div>
                     </div>
                 </div>
                 
@@ -209,30 +235,30 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             <div class="kids-block topic">
                 <div class="container">
                     <div class="caption">
-                        <h2> Kids</h2>
-                        <p>descr</p>
+                        <h2>Детская площадка</h2>
+                        <p>Большинство участников хочет обновить детскую площадку. Посмотрим, что на ней должнобыть и чем она должна быть покрыта.</p>
                     </div>
                 <div class="row">
+                    <div class="col-md-5">
+                        <h3>Наиболее востребованные функци площадки</h3>
+                        <ul>
+                            <li>Лазолка почему-то востребованна даже взрослыми.</li>
+                            <li>Песочница вызвает незначительный протест у детей</li>
+                        </ul>
+                    </div>
                     <div class="col-md-7">
                         <div id="ypg-kids-rank" class="chart-auto">
                             <img class="chart-img"  src="img/ypg-kids-rank.svg" />
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <h3>Наиболее востребованные функци площадки</h3>
-                        <ul>
-                            <li>Лазолка почему-то востребованна даже взрослыми.</li>
-                            <li>Песочница слегка вызвает незначительный протест.</li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-5">
-                        <h3>Вопрос покрытии площадки</h3>
-                        <p>Резиновое покрытие значительно популярнее.</p>
+                    <div class="col-md-5 col-md-push-7">
+                        <h3>Выбор покрытия площадки</h3>
+                        <p>Резиновое покрытие значительно популярнее. Так, что при всем богатстве выбора другой альтернативы нет.</p>
                     </div>
 
-                    <div class="col-md-7">
+                    <div class="col-md-7 col-md-pull-5">
                         <div id="ypg-kids-cover" class="chart-auto">
                             <img class="chart-img"  src="img/ypg-kids-cover.svg" />
                         </div>
@@ -245,102 +271,206 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- END KIDS -->
         
          <!-- BEGIN SPORT -->
-        <section id="sport">
+         
+
+         <section id="sport">
             <div class="sport-block topic">
                 <div class="container">
                     <div class="caption">
                         <h2>Спортивная площадка</h2>
-                        <p>Анализ возможных функций площадки</p>
+                        <p>Анализ возможных функций расширения площадки. Расмотрим площадку для подростков, и совмещенные вариаты со взрослыми либо детьми.</p>
                     </div>
-            <div class="row">
+                    
+         <!--ypg-sport-all-wrank--->                   
+
+             <div class="row">
+                <div class="col-md-5">
+                    <h3>Наиболее востребованные функци площадки</h3>
+                    <ul>
+                        <li>В данном варинте учтины все возрастные группы</li>
+                        <li>Большиство спортивных объектов долны быть убраны подальше.</li>
+                        <li>Малышам нужно фудбольное поле это даже страннее, чем лазалки взрослым</li>
+                    </ul>
+                </div>
                 <div class="col-md-7">
                     <div id="ypg-sport-all-rank" class="chart-auto">
                         <img class="chart-img"  src="img/ypg-sport-all-rank.svg" />
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <h3>Наиболее востребованные функци площадки</h3>
-                    <ul>
-                        <li>Ролики и футбол долны быть убраны детской площадки.</li>
-                        <li>В данном варинте учтины все возрастные группы</li>
-                        <li>Малышам нужно фудбольное поле это даже страннее, чем лазалки взрослым</li>
-                    </ul>
-                </div>
             </div>
+                    
+            <!--ypg-sport-all-wrank--->                   
+                    
             <div class="row">
-                <div class="col-md-5">
-                    <h3>Рейтинг в разрезе количества пользоватлей</h3>
-                    <p>Анализируя вопрос о ....  получаются другие приоритеты.</p>
+                <div class="col-md-5 col-md-push-7">
+                    <h3>Рейтинг в разрезе возрастных групп</h3>
+                    <p>Рейтинг определен по сумме баллов расчитаных как:</p>
+                    <ul>
+                        <li>Хочу - 1 балл</li>
+                        <li>Очень хочу - 2 балла</li>
+                        <li>Очень нужно - 3 балла</li>
+                    </ul>
+                     <p>
+                         Малышам нужно фудбольное поле это даже страннее, чем лазалки взрослым.
+                         Дети простя убрать спортивные поля подальше, а взросылые не хотят быть рядом с роликами.
+                     </p>
                 </div>
    
-                <div class="col-md-7">
-                    <div id="ypg-sport-activ-rank" class="chart-auto">
-                        <img class="chart-img"  src="img/ypg-sport-activ-rank.svg" />
+                <div class="col-md-7 col-md-pull-5">
+                    <div id="ypg-sport-all-wrank" class="chart-auto">
+                        <img class="chart-img"  src="img/ypg-sport-all-wrank.svg" />
                     </div>
                 </div>
             </div>
 
+            <!-- ypg-sport-teen-rank -->
+            
             <div class="row">
+                <div class="col-md-5">
+                    <h3>Чего хотят подростки?</h3>
+                    <ul>
+                        <li>Потребности отроков (детей от 11 до 17 лет)</li>
+                        <li>Фубольное поле вырывается в лидеры в таком варианте</li>
+                    </ul>
+                </div>
+         
                 <div class="col-md-7">
                     <div id="ypg-sport-teen-rank" class="chart-auto">
                         <img class="chart-img"  src="img/ypg-sport-teen-rank.svg" />
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <h3>А что нужно подросткам?</h3>
-                    <ul>
-                        <li>В данном варинте учтины запросы подростков ()</li>
-                        <li>.....</li>
-                    </ul>
-                </div>
             </div>
-
+            <!-- ypg-demog-sckool--->
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-md-push-7">
                     <h3>А сколько у нас подростков?</h3>
                     <ul>
-                        <li>Подростки это самая малочистленая группа в опросе</li>
-                        <li>В ближайшие три года ситация не изменится</li>
-                        <li>Возможно стоит их объеденить с дугими?</li>
+                        <li>Обычно к подросткам относят детей из основной (средней школы) </li>
+                        <li>Это самая малочистленая группа в опросе</li>
+                        <li>В ближайшие и судя по количеству школьников младших класов ситуация не скоро изменится.</li>
+                        <li>Возможно стоит их объеденить с дугими групами?</li>
                     </ul>
                 </div>
    
-                <div class="col-md-7">
+                <div class="col-md-7 col-md-pull-5">
                     <div id="ypg-demog-sckool" class="chart-auto">
                         <img class="chart-img"  src="img/ypg-demog-sckool.svg" />
                     </div>
                 </div>
             </div>
             
-             <div class="row">
+            <!-- ypg-demog-agestage--->
+            <div class="row">
+                <div class="col-md-5">
+                    <h3>Как устроены возрастыне группы</h3>
+                    <p>Разделение по уровням школы достаточно точно отражает изменение потребностей.
+                       Но для восприятия на графиках это черезмерное число категорий , поэтому в отчете используется Периодизация Эльконина.
+                       более подробно можно посмотреть на wiki <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">
+                           Возрастная периодизация
+                       </a>
+                    </p>
+                    <ul>
+                        <li>Категория "Отроки" включает основную (подростков) и старшую школу, но попрежнему это самая малочисленная группа жителей</li>
+                        <li>Посмотреть как объедены отсальныегруппы можно по цветовая кодировке - она совпадает с предидущим графиком </li>
+                    </ul>
+     
+                   
+                </div>
+   
                 <div class="col-md-7">
+                    <div id="ypg-demog-agestage" class="chart-auto">
+                        <img class="chart-img"  src="img/ypg-demog-agestage.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- ypg-sport-teen-kids--->
+             <div class="row">
+                <div class="col-md-5 col-md-push-7">
+                    <h3>Площадка для подростков и детей</h3>
+                    <ul>
+                        <li>Потребности детей и отроков</li>
+                        <li>Ролики тут слегка популярнее футбола</li>
+                    </ul>
+                </div>
+                <div class="col-md-7 col-md-pull-5">
                     <div id="ypg-sport-teen-kids" class="chart-auto">
                         <img class="chart-img"  src="img/ypg-sport-teen-kids.svg" />
                     </div>
                 </div>
+            </div>
+            <!-- ypg-sport-teen-kids-wrank--->
+
+            <div class="row">
                 <div class="col-md-5">
-                    <h3>Площадка для подростков и детей</h3>
+                    <h3>Рейтинг для для подростков и детей</h3>
                     <ul>
-                        <li>В данном варинте учтины дети и отроки</li>
-                        <li>.....</li>
+                        <li>Здесь ипользова система баллов (как в общем рейтинге) </li>
+                        <li>Порядок определен только голосами детей и отроков</li>
+                        <li>Ролики выигрыват, но малыши и взрослые просят убрать площадку подальше</li>
+                        <li>Сразу полсе катка идет футбольное поле, но его просят убрать сами дети</li>
                     </ul>
                 </div>
+                <div class="col-md-7">
+                    <div id="ypg-sport-teen-kids-wrank" class="chart-auto">
+                        <img class="chart-img"  src="img/ypg-sport-teen-kids-wrank.svg" />
+                    </div>
+                </div>
             </div>
-            
+
+            <!-- yypg-sport-teen-adult--->
+           <div class="row">
+                <div class="col-md-5 col-md-push-7">
+                    <h3>Площадка для подростков и взрослых </h3>
+                    <ul>
+                        <li>Потребности отроков и взрослых</li>
+                        <li>Порядок определен только голосами: очень хочу и очень нужно </li>
+                        <li>Тут в лидеры вырывется поле для волейбола</li>
+                        <li>Футбол второй, если учитывать и просто хочу то вторым будет бадминтон</li>
+                    </ul>
+                </div>
+   
+                <div class="col-md-7 col-md-pull-5">
+                    <div id="ypg-sport-teen-adult" class="chart-auto">
+                        <img class="chart-img"  src="img/ypg-sport-teen-adult.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- ypg-sport-teen-adult-wrank--->
            <div class="row">
                 <div class="col-md-5">
-                    <h3>Площадка для подростков и взрослых</h3>
+                    <h3>Рейтинг для подростков и взрослых </h3>
                     <ul>
-                        <li>В данном варинте учтины дети и отроки</li>
-                        <li>...</li>
-                        <li>...</li>
+                        <li>Здесь ипользова система баллов (как в общем рейтинге) </li>
+                        <li>Порядок определен только голосами отроков и взрослых </li>
+                        <li>В рейтенге волейбол подтверждает свое лидерство, и каток как всегда популярен</li>
+                        <li>Далее на равных баскедбол и бадминтон, а футбол слегка отстает</li>
                     </ul>
                 </div>
    
                 <div class="col-md-7">
-                    <div id="ypg-sport-teen-adult" class="chart-auto">
-                        <img class="chart-img"  src="img/ypg-sport-teen-adult.svg" />
+                    <div id="ypg-sport-teen-adult-wrank" class="chart-auto">
+                        <img class="chart-img"  src="img/ypg-sport-teen-adult-wrank.svg" />
                     </div>
+                </div>
+            </div>
+            
+            <!-- sport resume-->
+            <div class="row">
+                <div class ="col-md-12">
+                    <h2>Выводы по спортивной площадке</h2>
+                    <p>Графиков много и все говорят немного разное, мои выводы кратко:</p>
+                       <ul>
+                        <li>При всех вариантах очень хочется каток, он редко спускается ниже втрого места </li>
+                        <li>Непосредстванно рядом с детской площадкой не стоит размещать спортивные объекты - малыши и дети просят их убрать подальше</li>
+                        <li>Меньше всего малыши и дети против соседства с войболом и бадминтоном </li>
+                        <li>Создание объектов именно для подростков не рационально, так как их очень мало и увеличение не планируется </li>
+                        <li>Площадка для подростков и взрослых должна позволять игать в войбол, бадминтон, баскетбол, а потом уже футбол если поместится</li>
+                        <li>Площадка для подростков и детей это площадка для роликов, но она должны быть в дали от десткой площадки и от взрослых</li>
+                    </ul>
+                    <p><strong>Итого:</strong> если мы хотим разметить спортивню площадку у елки рядом с дестской площадкой, то это должно быть поле для волейбола и бадминтона, а не футбол. Следующая задача найти площадку для роликов, а потом уже для групповых видов спорта.</p>
+                 
                 </div>
             </div>
             </div>
@@ -351,73 +481,99 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         </section>
         <!-- END SPORT -->
         
-       
-         
-        <!-- BEGIN FEATURES SECTION -->
-        <section id="features">
-            <!-- Features BEGIN -->
-            <div class="features-bg">
+            <!-- BEGIN alcove -->
+        <section id="alcove">
+            <div class="alcove-block topic">
                 <div class="container">
-                    <div class="heading">
-                        <h2><strong>Metronics</strong> Main Features</h2>
-                        <p>To try the most advanced business</p>
-                    </div><!-- //end heading -->
-
-                    <!-- Features -->
-                    <div class="row margin-bottom-70">
-                        <div class="col-md-6 md-margin-bottom-70">
-                            <div class="features">
-                                <img src="pg_kids_rank_by_age.svg" alt="">
-
-
-
-
-                                <div class="features-in">
-                                    <h3><a href="#">Plot.ly</a></h3>
-                                    <p>Комментарии к графику ы</p>
-                                </div>
-                            </div>
+                    <div class="caption">
+                        <h2>Беседка</h2>
+                        <p> На момент формирование опроса беседка планировалась как чать детской площадки, но судя по комментариям это отдельынй инвестиционный проект</p>
+                    </div>
+                 
+                <!---ypg-alcove-rank--->    
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>На сколько нужна беседка?</h3>
+                        <p>В инвестиционной части беседки не было, но несколько человек ее туда добавили.
+                           Беседка была опросе по объектам площадки, я выбрал несколько объектов лидеров, что бы сравнить их с беседкой.
+                        </p>
+                        <p>Беседка оказаласть важнее всех спортивных объектов, и даже обогнала песочницу</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div id="ypg-alcove-rank" class="chart-auto">
+                            <img class="chart-img"  src="img/ypg-alcove-rank.svg" />
                         </div>
-                        <iframe  class="col-md-6" frameborder="0" scrolling="no" src="pg_kids_rank_by_age.html"></iframe>
+                    </div>
+                </div>
+                <!--- ypg-alcove-use--->
+                <div class="row">
+                    <div class="col-md-5 col-md-push-7">
+                        <h3>Кому нужна беседка?</h3>
+                        <p>Тут как не крути, и с дополнительными баллами (рейтинг) за очень хочу, 
+                            и просто все кто высказались, получается, что нужна всем. Это скорре говорит о том, что беседку люди разный смысл вкладывают. Стоит дополнительно изучить этот вопрос. </p>
+                    </div>
 
-                    </div><!-- //end row -->
-                    <div class="row margin-bottom-80">
-                        <div class="col-md-6 md-margin-bottom-70">
-                            <div class="features">
-                                <img src="assets/onepage2/img/widgets/screen3.png" alt="">
-                                <div class="features-in">
-                                    <h3><a href="#">Built with bootstrap</a></h3>
-                                    <p>Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolor</p>
-                                </div>
-                            </div>
+                    <div class="col-md-7 col-md-pull-5">
+                        <div id="ypg-alcove-use" class="chart-auto">
+                            <img class="chart-img"  src="img/ypg-alcove-use.svg" />
                         </div>
-                        <div class="col-md-6 md-margin-bottom-70"  >
-                          <div class="features">
-                              <div class="embed-responsive embed-responsive-16by9" id="myDiv">
-                              </div>
-                              <div class="features-in">
-                                  <h3><a href="#">Built with bootstrap</a></h3>
-                                  <p>Lorem niam ipsum dolor sit ammet adipiscing et suitem elit et nonuy nibh elit niam dolor</p>
-                              </div>
-                          </div>
-                        </div>
-                        <script>
-                            d3.json('pg_kids_rank_by_age.json', function (error, data) {
-                                if (error)
-                                    return console.warn(error);
-                                Plotly.newPlot('myDiv', data.data, data.layout, {displayModeBar: false});
-                            });
-<!-- JAVASCRIPT CODE GOES HERE -->
-</script>
-                    </div><!-- //end row -->
-                    <!-- End Features -->
-
-
+                    </div>
                 </div>
             </div>
-            <!-- Features END -->
+                </div>
+
         </section>
-        <!-- END FEATURES SECTION -->
+        <!-- END ALCOVE -->
+        <section id="findings">
+          <div class="findings-block topic">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Выводы по результатам опроса</h2>
+                        <small>Тут обычно консультанты вставяют пару страниц текста: 
+                            мы не отвечем за эти результаты, так оно основаны на данных которые нам дали.
+                            Я напишу, что это мое частное мнение основанное ответах в анкете :)
+                        </small>
+                        <ul>
+                            <li>Для отдельной подростковой площадки у нас слишком мало подростков</li>
+                            <li>Большенство спортивных объектов нужно размещать отдельно от детской площадки</li>
+                            <li>Проекты в порядке их приоритета (востребованности):
+                            <ol>
+                                    <li>Резиновое покрытие и лазалки на деской площадке</li>
+                                    <li>Беседка как отдельный проект, правда нужно уточнить ее наполнение</li>
+                                    <li>Отдельная площадка для роликов </li>
+                                    <li>Маленький каток (как зимняя функция площадки) </li>
+                                    <li>Площадка для волейбола и бадминтона, может быть рядом с детской площадкой </li>
+                                    <li>Площадка для групповых видов спорта</li>
+                            </ol></li>
+                            
+                            
+                        </ul>
+                        
+                            
+                    </div>
+                        
+                </div>
+            </div>
+              </div>
+        </section>
+         
+       
+        <section id="pull">
+            <div class="pull-block topic">
+
+                <div class="container">
+
+                    <div class="col-md-12">
+                        <h2>Опрос</h2>
+                        <p>Вы не заполняли анкету? Поменели точку зрения, вы можете заполнить анкету повторно.
+                        <a href="https://goo.gl/forms/2Bo1Hw4bgU7gNfEA3">Анкета</a> попрежнему доступна для заполнения</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
    </div>
     <!-- END MAIN LAYOUT -->
